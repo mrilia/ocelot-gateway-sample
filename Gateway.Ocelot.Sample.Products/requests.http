@@ -1,0 +1,14 @@
+
+GET http://localhost:5001/product
+########
+
+GET http://localhost:5001/product/1
+########
+
+POST Http://localhost:5001/product HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Wallet",
+    "description": "Small, Brown"
+}
