@@ -34,7 +34,7 @@ namespace Gateway.Ocelot.Sample.Products.Services
 
         public Product Get(int id)
         {
-            return _products.First(f => f.Id == id);
+            return _products.FirstOrDefault(f => f.Id == id);
         }
 
         public List<Product> GetAll()
