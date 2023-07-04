@@ -1,0 +1,21 @@
+
+GET http://localhost:5000/api/v1/products
+########
+
+GET http://localhost:5000/api/v1/products/1
+########
+
+POST Http://localhost:5000/api/v1/products HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Wallet",
+    "description": "Small, Brown"
+}
+########
+
+
+GET http://localhost:5000/api/v1/users
+########
+
+GET http://localhost:5000/api/v1/users/1
