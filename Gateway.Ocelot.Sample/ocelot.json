@@ -13,7 +13,15 @@
           "Host": "localhost",
           "Port": 5002
         }
-      ]
+      ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "3s",
+        "PeriodTimespan": 1,
+        "Limit": 1,
+        "HttpStatusCode": 429
+      }
     },
     {
       "UpstreamPathTemplate": "/api/v1/users/{Id}",
