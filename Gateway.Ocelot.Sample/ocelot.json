@@ -45,7 +45,11 @@
           "Host": "localhost",
           "Port": 5001
         }
-      ]
+      ],
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "ProductsChache"
+      }
     },
     {
       "UpstreamPathTemplate": "/api/v1/products/{Id}",
